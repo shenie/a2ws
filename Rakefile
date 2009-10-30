@@ -7,12 +7,14 @@ begin
     gem.name = "a2ws"
     gem.summary = %Q{Wrapper for Amazon Associates Web Service (A2WS).}
     gem.email = "andy@shenie.info"
-    gem.homepage = "http://github.com/handcrafted/a2ws"
+    gem.homepage = "http://github.com/shenie/a2ws"
     gem.authors = ["Andy Shen", "Josh Owens"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
     gem.add_dependency('httparty', '>= 0.4.3')
     gem.add_dependency('activesupport', '>= 2.2.2')
   end
+
+  Jeweler::GemcutterTasks.new
 
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
